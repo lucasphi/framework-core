@@ -1,6 +1,7 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
+/.vs
 /source/Framework.Core/bin
 /source/Framework.Core/obj
 /source/Framework.Model/bin

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Required elements-->
+    <id>Framework.Repository</id>
+    <version>1.0.3</version>
+    <description>Framework repository library</description>
+    <authors>Lucas Leite</authors>
+
+    <!-- Optional elements -->
+    <dependencies>
+      <dependency id="Framework.Core" version="1.0.3" />
+      <dependency id="Framework.Model" version="1.0.3" />
+      <dependency id="Microsoft.EntityFrameworkCore" version="2.1.1" />
+      <dependency id="Microsoft.Extensions.Configuration" version="2.1.1" />
+      <dependency id="Microsoft.Extensions.Configuration.Json" version="2.1.1" />
+    </dependencies>
+    <!-- ... -->
+  </metadata>
+  <!-- Optional 'files' node -->
+  <files>
+    <file src="bin\Release\netcoreapp2.1\Framework.Repository.dll" target="lib\netcoreapp2.1" />
+    <file src="bin\Release\netcoreapp2.1\Framework.Repository.xml" target="lib\netcoreapp2.1" />
+  </files>
+</package>

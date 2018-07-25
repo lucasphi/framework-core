@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Required elements-->
+    <id>Framework.Web.Mvc</id>
+    <version>1.0.3</version>
+    <description>Framework web MVC library</description>
+    <authors>Lucas Leite</authors>
+
+    <!-- Optional elements -->
+    <dependencies>
+      <dependency id="Framework.Web" version="1.0.3" />
+      <dependency id="Framework.Model" version="1.0.3" />
+      <dependency id="Framework.Model.Mapper" version="1.0.3" />
+      <dependency id="Microsoft.AspNetCore.CookiePolicy" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Localization.Routing" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Mvc" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Session" version="2.1.1" />
+      <dependency id="SmartFormat.NET" version="2.3.0" />
+      <dependency id="System.ValueTuple" version="4.5.0" />
+    </dependencies>
+    <!-- ... -->
+  </metadata>
+  <!-- Optional 'files' node -->
+  <files>
+    <file src="bin\Release\netcoreapp2.1\Framework.Web.Mvc.dll" target="lib\netcoreapp2.1" />
+    <file src="bin\Release\netcoreapp2.1\Framework.Web.Mvc.xml" target="lib\netcoreapp2.1" />
+    <file src="bin\Release\netcoreapp2.1\pt-BR\Framework.Web.Mvc.resources.dll" target="lib\netcoreapp2.1\pt-BR" />
+  </files>
+</package>

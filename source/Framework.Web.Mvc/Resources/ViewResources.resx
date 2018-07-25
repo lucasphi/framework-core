@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Btn_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Btn_AddFile" xml:space="preserve">
+    <value>Add file</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Btn_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Btn_Fullscreen" xml:space="preserve">
+    <value>Fullscreen</value>
+  </data>
+  <data name="Btn_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Btn_SaveClose" xml:space="preserve">
+    <value>Save + Close</value>
+  </data>
+  <data name="DataGrid_Btn_RemoveLines" xml:space="preserve">
+    <value>Remove selected line</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Error_Message" xml:space="preserve">
+    <value>An unexpected error has occured.</value>
+  </data>
+  <data name="Error_Message_BackBtn" xml:space="preserve">
+    <value>Return to last page</value>
+  </data>
+  <data name="Error_Message_Info" xml:space="preserve">
+    <value>Please contact administration if it persists.</value>
+  </data>
+  <data name="Error_Title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Grid_Label_Displayed" xml:space="preserve">
+    <value>Showing {0} to {1} of {2} records</value>
+  </data>
+  <data name="Invalid_Recaptcha" xml:space="preserve">
+    <value>Please confirm that you are not a robot.</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NotFound_Message" xml:space="preserve">
+    <value>The resource you are trying to access does not exists.</value>
+  </data>
+  <data name="NotFound_Message_BackBtn" xml:space="preserve">
+    <value>Go to home</value>
+  </data>
+  <data name="NotFound_Title" xml:space="preserve">
+    <value>Page not found</value>
+  </data>
+  <data name="Pagination_First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="Pagination_Label_Show" xml:space="preserve">
+    <value>Show </value>
+  </data>
+  <data name="Pagination_Last" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="Pagination_Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Pagination_Prev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="Select_SelectOption" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="UnauthorizedAccess_Message" xml:space="preserve">
+    <value>You do not have permission to access this resource.</value>
+  </data>
+  <data name="UnauthorizedAccess_Title" xml:space="preserve">
+    <value>Restricted Access</value>
+  </data>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>The field {0} is required.</value>
+  </data>
+  <data name="Validation_Required_Min" xml:space="preserve">
+    <value>Select at least {0} option(s).</value>
+  </data>
+  <data name="Validation_Required_Selection" xml:space="preserve">
+    <value>Select an option.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Btn_UndoRemoved" xml:space="preserve">
+    <value>Restore removed</value>
+  </data>
+  <data name="Validation_MaxLength" xml:space="preserve">
+    <value>The field {0} cannot be more then {1} characters long.</value>
+  </data>
+  <data name="Validation_MinLength" xml:space="preserve">
+    <value>The field {0} must be at least {1} characters long.</value>
+  </data>
+  <data name="Validation_Regex" xml:space="preserve">
+    <value>The field {0} is not valid.</value>
+  </data>
+  <data name="Grid_No_Results" xml:space="preserve">
+    <value>No results were found</value>
+  </data>
+  <data name="Validation_Required_Detail" xml:space="preserve">
+    <value>Add at least one item to the {0} list.</value>
+  </data>
+  <data name="Validation_PasswordMismatch" xml:space="preserve">
+    <value>The passwords do not match.</value>
+  </data>
+  <data name="Portlet_Fullscreen" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="Portlet_FullscreenUndo" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Btn_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Btn_Upload" xml:space="preserve">
+    <value>Choose file</value>
+  </data>
+  <data name="Btn_Upload_Multiple" xml:space="preserve">
+    <value>Choose files</value>
+  </data>
+  <data name="Btn_Upload_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Upload_File_Invalid" xml:space="preserve">
+    <value>You can not upload files of this type.</value>
+  </data>
+  <data name="Upload_File_Limit" xml:space="preserve">
+    <value>You cannot upload any more files.</value>
+  </data>
+  <data name="Upload_File_Size_Limit" xml:space="preserve">
+    <value>The file size is greater then {{maxFilesize}} mb.</value>
+  </data>
+</root>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Required elements-->
+    <id>Framework.Web.Security</id>
+    <version>1.0.3</version>
+    <description>Framework web security library</description>
+    <authors>Lucas Leite</authors>
+
+    <!-- Optional elements -->
+    <dependencies>
+      <dependency id="Framework.Core" version="1.0.3" />
+      <dependency id="Framework.Web" version="1.0.3" />
+      <dependency id="Microsoft.AspNetCore.Authorization" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Cryptography.KeyDerivation" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Mvc" version="2.1.1" />
+      <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.1.1" />
+      <dependency id="Microsoft.Extensions.Caching.Abstractions" version="2.1.1" />    
+    </dependencies>
+    <!-- ... -->
+  </metadata>
+  <!-- Optional 'files' node -->
+  <files>
+    <file src="bin\Release\netcoreapp2.1\Framework.Web.Security.dll" target="lib\netcoreapp2.1" />
+    <file src="bin\Release\netcoreapp2.1\Framework.Web.Security.xml" target="lib\netcoreapp2.1" />
+    <file src="bin\Release\netcoreapp2.1\pt-BR\Framework.Web.Security.resources.dll" target="lib\netcoreapp2.1\pt-BR" />
+  </files>
+</package>

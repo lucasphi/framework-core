@@ -1,6 +1,7 @@
 ﻿using Framework.Collections;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,9 +17,10 @@ namespace Framework.Web.Mvc.Binders
         /// <summary>
         /// Creates a new <see cref="FWListBinder&lt;TElement&gt;" />
         /// </summary>
-        /// <param name="elementBinder">The Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder for binding elements</param>
-        public FWListBinder(IModelBinder elementBinder)
-            : base(elementBinder)
+        /// <param name="elementBinder">The Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder for binding elements.</param>
+        /// <param name="loggerFactory">The Microsoft.Extensions.Logging.ILoggerFactory.</param>
+        public FWListBinder(IModelBinder elementBinder, ILoggerFactory loggerFactory)
+            : base(elementBinder, loggerFactory)
         { }
 
         /// <summary>

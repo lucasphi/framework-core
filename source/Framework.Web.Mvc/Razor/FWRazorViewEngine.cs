@@ -25,9 +25,9 @@ namespace Framework.Web.Mvc.Razor
         /// Initializes a new instance of the <see cref="FWRazorViewEngine" />.
         /// </summary>
         public FWRazorViewEngine(IRazorPageFactoryProvider pageFactory, IRazorPageActivator pageActivator,
-                                 HtmlEncoder htmlEncoder, IOptions<RazorViewEngineOptions> optionsAccessor, RazorProject razorProject, ILoggerFactory loggerFactory, DiagnosticSource diagnosticSource)
+                                 HtmlEncoder htmlEncoder, IOptions<RazorViewEngineOptions> optionsAccessor, RazorProjectFileSystem razorFileSystem, ILoggerFactory loggerFactory, DiagnosticSource diagnosticSource)
         {
-            _engine = new RazorViewEngine(pageFactory, pageActivator, htmlEncoder, optionsAccessor, razorProject, loggerFactory, diagnosticSource);
+            _engine = new RazorViewEngine(pageFactory, pageActivator, htmlEncoder, optionsAccessor, razorFileSystem, loggerFactory, diagnosticSource);
         }
         
         /// <inheritdoc />

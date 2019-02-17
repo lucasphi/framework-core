@@ -11,16 +11,6 @@ namespace Framework.Web.Mvc.Filters
     {
         public override void OnException(ExceptionContext context)
         {
-            // Handles ajax erros as a JS alert.
-            if (context.HttpContext.Request.IsAjaxRequest())
-            {
-                context.HttpContext.Response.StatusCode = 500;
-                context.Result = new JsonResult(new
-                {
-                    message = context.Exception.Message
-                });
-            }
-            
             base.OnException(context);
         }
     }

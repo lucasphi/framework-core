@@ -4,18 +4,20 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Version>1.0.0</Version>
     <Configurations>Debug;Release;Mobile</Configurations>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp1.1\Framework.Web.Mvc.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Framework.Web.Mvc.xml</DocumentationFile>
+    <OutputPath>..\..\packages\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mobile|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp1.1\Framework.Web.Mvc.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Framework.Web.Mvc.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp1.1\Framework.Web.Mvc.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp2.1\Framework.Web.Mvc.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,38 +31,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Localization.Routing" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
-    <PackageReference Include="SmartFormat.NET" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Framework.Model.Mapper\Framework.Model.Mapper.csproj" />
     <ProjectReference Include="..\Framework.Model\Framework.Model.csproj" />
-    <ProjectReference Include="..\Framework.Web\Framework.Web.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Resources\Resources.Designer.cs">
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="Resources\ViewResources.Designer.cs">
-      <DependentUpon>ViewResources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Resources.resx">
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\ViewResources.resx">
-      <LastGenOutput>ViewResources.Designer.cs</LastGenOutput>
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

@@ -10,7 +10,6 @@
     <!-- Optional elements -->
     <dependencies>
       <dependency id="Framework.Core" version="1.0.3" />
-      <dependency id="Framework.Web" version="1.0.3" />
       <dependency id="Microsoft.AspNetCore.Authorization" version="2.1.1" />
       <dependency id="Microsoft.AspNetCore.Cryptography.KeyDerivation" version="2.1.1" />
       <dependency id="Microsoft.AspNetCore.Mvc" version="2.1.1" />

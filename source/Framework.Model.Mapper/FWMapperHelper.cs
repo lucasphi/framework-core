@@ -1,5 +1,5 @@
-﻿using Framework.Core.Ioc;
-using Framework.Model.Mapper;
+﻿using Framework.Model.Mapper;
+using Framework.Model.Mapper.Implementation.ValueInjecter;
 using System;
 using System.Collections.Generic;
 
@@ -21,7 +21,7 @@ namespace Framework.Model
         public static TDestination Map<TDestination>(this IFWMap source, TDestination targetObject = null)
             where TDestination : class, new()
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Map(source, targetObject);
         }
 
@@ -37,7 +37,7 @@ namespace Framework.Model
             where TDestination : class, new()
             where TInjection : IFWInjection, new()
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Map<TDestination, TInjection>(source, targetObject);
         }
 
@@ -50,7 +50,7 @@ namespace Framework.Model
         public static IEnumerable<TDestination> Map<TDestination>(this IEnumerable<IFWMap> source)
             where TDestination : class, new()
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Map<TDestination>(source);
         }
         #endregion
@@ -64,7 +64,7 @@ namespace Framework.Model
         /// <returns>The mapped object.</returns>
         public static TDestination Transform<TDestination>(object source)
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Transform<TDestination>(source);
         }
 
@@ -76,7 +76,7 @@ namespace Framework.Model
         /// <returns>The mapped object.</returns>
         public static object Transform(Type type, object source)
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Transform(type, source);
         }
 
@@ -90,7 +90,7 @@ namespace Framework.Model
         public static object Transform<TInjection>(Type type, object source)
             where TInjection : IFWInjection, new()
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             return mapper.Transform<TInjection>(type, source);
         }
 
@@ -104,7 +104,7 @@ namespace Framework.Model
             where TResult : new()
             where TInjection : IFWInjection, new()
         {
-            var mapper = FWIocManager.Default.Resolve<IFWMapper>();
+            var mapper = new FWValueInjecterMapper();
             mapper.AddMap<TSource, TResult, TInjection>();
         }
         #endregion

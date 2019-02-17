@@ -3,18 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Configurations>Debug;Release;Mobile</Configurations>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Framework.Model.Mapper.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Framework.Model.Mapper.xml</DocumentationFile>
+    <OutputPath>..\..\packages\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mobile|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Framework.Model.Mapper.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Framework.Model.Mapper.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Framework.Model.Mapper.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netcoreapp2.1\Framework.Model.Mapper.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -14,35 +14,6 @@ namespace Framework.Core.Ioc
     /// </summary>
     public class FWIocContainer
     {
-        private static Type FWIoCModule = typeof(IFWIocModule);
-
-        /// <summary>
-        /// Static constructor to initialize the default IoC Container.
-        /// </summary>
-        static FWIocContainer()
-        {
-            FWIocContainer container = new FWIocContainer();
-
-            // Finds all project libraries and the framework libraries
-            var libs = DependencyContext.Default.RuntimeLibraries.Where(f => f.Type == "project" || f.Name.ToLower().StartsWith("framework."));
-            foreach (var lib in libs)
-            {
-                var assembly = Assembly.Load(new AssemblyName(lib.Name));
-                var modules = assembly.ExportedTypes.Where(f => FWIoCModule.IsAssignableFrom(f) && f.Name != FWIoCModule.Name);
-
-                foreach (var module in modules)
-                {
-                    var moduleObj = (IFWIocModule)Activator.CreateInstance(module);
-                    moduleObj.Register(container);
-                }
-            }
-
-            Container = container._builder.Build();
-
-            // clears the container object.
-            container = null;
-        }
-
         /// <summary>
         /// Register a component to be created through reflection.
         /// </summary>
